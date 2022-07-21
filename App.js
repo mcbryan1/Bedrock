@@ -1,12 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { 
+  Raleway_400Regular,
+  Raleway_600SemiBold,
+  Raleway_700Bold,
+  
+  useFonts,
+} from '@expo-google-fonts/raleway'
+import AppLoading from 'expo-app-loading';
+import { NavigationContainer } from "@react-navigation/native";
+import StackNavigator from 'routes/StackNavigator';
+
+
+
+
+
 
 export default function App() {
+  let [fontsLoaded, error] = useFonts({
+    Regular: Raleway_400Regular,
+    SemiBold: Raleway_600SemiBold,
+    Bold: Raleway_700Bold,
+  });
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
 
