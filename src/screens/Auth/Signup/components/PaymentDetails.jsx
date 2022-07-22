@@ -1,16 +1,25 @@
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, Image } from "react-native";
 import React, { useState } from "react";
 import styles from "./styles";
 import FormInput from "lib/components/inputs/FormInputs";
 import Spacer from "lib/components/spacer/Spacer";
 import Checkbox from "expo-checkbox";
 import { colors, dimensions } from "lib/constants";
+import { images } from "assets";
+
+
+
 const PaymentDetails = () => {
   const [isSelected, setSelected] = useState(false);
 
   return (
     <View style={styles.personalContainer}>
       <ScrollView>
+        <View style={styles.imageContainer}>
+            <Image source={images.visa} style={styles.cardimg} />
+            <Image source={images.paypal} style={styles.cardimg} />
+            <Image source={images.maestro} style={styles.cardimg} />
+        </View>
         <Text style={styles.title}>Payment Details</Text>
         <FormInput
           placeholder="Enter yor card name"

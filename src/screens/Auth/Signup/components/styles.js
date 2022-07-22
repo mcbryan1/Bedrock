@@ -7,6 +7,14 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: dimensions.rW.sm,
   },
+  imageContainer:{
+flexDirection: "row",
+justifyContent: "space-around",
+  },
+  cardimg:{
+    width: dimensions.rW.lg,
+    height: dimensions.rW.md + 10,
+  },
   title:{
     fontSize: dimensions.rH.mxs,
     fontFamily: "Bold",

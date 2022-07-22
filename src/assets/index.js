@@ -6,4 +6,7 @@ export const images ={
     blob2: require('./images/blob2.png'),
     blob3: require('./images/blob3.png'),
     google: require('./images/google.png'),
+    paypal: require('./images/paypal.png'),
+    visa: require('./images/visa.png'),
+    maestro: require('./images/maestro.png'),
 }
