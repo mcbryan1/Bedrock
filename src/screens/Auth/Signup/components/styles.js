@@ -12,7 +12,7 @@ flexDirection: "row",
 justifyContent: "space-around",
   },
   cardimg:{
-    width: dimensions.rW.lg,
+    width: dimensions.rW.lg + 2,
     height: dimensions.rW.md + 10,
   },
   title:{
