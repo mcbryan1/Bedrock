@@ -30,6 +30,24 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+  },
+  conditionsContainer:{
+    flexDirection: "row",
+    marginTop: dimensions.rH.mxs,
+  },
+  conditionsText:{
+    fontFamily: "Regular",
+    fontSize: dimensions.rH.xs,
+    marginLeft: dimensions.rW.sm,
+  },
+  conditionsLink:{
+    fontFamily: "Regular",
+    fontSize: dimensions.rH.xs,
+    marginLeft: dimensions.rW.xs,
+    color: colors.primary,
+  },
+  conditionsTextContainer:{
+    flexDirection: "row",
   }
 });
 

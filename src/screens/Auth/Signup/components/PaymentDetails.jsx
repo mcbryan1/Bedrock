@@ -1,11 +1,12 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import styles from "./styles";
 import FormInput from "lib/components/inputs/FormInputs";
 import Spacer from "lib/components/spacer/Spacer";
-
+import Checkbox from "expo-checkbox";
+import { colors, dimensions } from "lib/constants";
 const PaymentDetails = () => {
-    const [isSelected, setSelection] = useState(false);
+  const [isSelected, setSelected] = useState(false);
 
   return (
     <View style={styles.personalContainer}>
@@ -36,9 +37,20 @@ const PaymentDetails = () => {
           </View>
         </View>
         <View style={styles.conditionsContainer}>
-          <Text style={styles.conditionsText}>
-            I accept the Bedrock Exchange Terms and Condition
-          </Text>
+          <Checkbox
+            style={styles.checkbox}
+            value={isSelected}
+            onValueChange={setSelected}
+            color={isSelected ? colors.primary : undefined}
+          />
+          <View style={styles.conditionsTextContainer}>
+            <Text style={styles.conditionsText}>I accept the</Text>
+            <TouchableOpacity>
+              <Text style={styles.conditionsLink}>
+                Bedrock Exchange Terms and Condition
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </ScrollView>
     </View>

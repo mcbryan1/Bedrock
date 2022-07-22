@@ -31,6 +31,14 @@ const CompleteRegistration = () => {
           keyboard="default"
           secureTextEntry={true}
         />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
       </ScrollView>
     </View>
   );
