@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Signin, OnbordingOne, OnbordingTwo, OnbordingThree, Verify, Home } from "screens";
+import { Signin, OnbordingOne, OnbordingTwo, OnbordingThree, Verify, Home, Signup } from "screens";
 import { welcomeOptions } from "./AppbarExports";
 const Stack = createStackNavigator();
 
@@ -28,6 +28,11 @@ const StackNavigator = () => {
       <Stack.Screen
         name="Signin"
         children={({ navigation }) => <Signin navigation={navigation} />}
+        options={welcomeOptions}
+      />
+      <Stack.Screen
+        name="Signup"
+        children={({ navigation }) => <Signup navigation={navigation} />}
         options={welcomeOptions}
       />
       <Stack.Screen

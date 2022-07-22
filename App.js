@@ -10,6 +10,7 @@ import {
 import AppLoading from 'expo-app-loading';
 import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from 'routes/StackNavigator';
+import { SelectProvider } from '@mobile-reality/react-native-select-pro';
 
 
 
@@ -28,7 +29,9 @@ export default function App() {
 
   return (
     <NavigationContainer>
+      <SelectProvider>
       <StackNavigator />
+      </SelectProvider>
     </NavigationContainer>
   );
 }
