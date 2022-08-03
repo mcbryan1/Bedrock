@@ -14,24 +14,24 @@ const styles = StyleSheet.create({
   
   blob: {
     position: "absolute",
-    left: -60,
+    left: -55,
     width: width * 0.7,
     height: height * 0.3,
-    top: -80,
+    top: -100,
   },
   blob2:{
     position: "absolute",
-    left: -56,
+    left: -50,
     width: width * 0.7,
     height: height * 0.3,
-    top: -76,
+    top: -98,
   },
   blob3:{
     position: "absolute",
-    left: -52,
+    left: -45,
     width: width * 0.7,
     height: height * 0.3,
-    top: -72,
+    top: -95,
   },
   signInTextContainer:{
     flex: 4,

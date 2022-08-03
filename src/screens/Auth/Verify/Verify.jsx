@@ -17,8 +17,7 @@ const Verify = ({navigation}) => {
             <Text style={styles.signinText}>Verify OTP</Text>
             <Text style={styles.signinSubText}>
               WWe want to know that you are the one trying to log in. A 6ix
-              digit code has been sent to your registration
-              email@*********nonso45@gmail.com
+              digit code has been sent to your phone number
             </Text>
           </View>
           <View style={styles.inputContainer}>

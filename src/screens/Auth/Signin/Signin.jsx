@@ -14,7 +14,7 @@ const Signin = ({ navigation }) => {
       <View style={styles.subContainer}>
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
           <View style={styles.signInTextContainer}>
-            <Text style={styles.signinText}>Signin</Text>
+            <Text style={styles.signinText}>Sign in</Text>
             <Text style={styles.signinSubText}>
               Welcome back! Please enter your valid details to sign in to your
               account
@@ -22,9 +22,9 @@ const Signin = ({ navigation }) => {
           </View>
           <View style={styles.inputContainer}>
             <FormInput
-              placeholder="Enter your email"
-              label="Email Address"
-              keyboard="email"
+              placeholder="Enter your phone number"
+              label="Phone Number"
+              keyboard="number"
             />
             <FormInput
               placeholder="  Enter your password"

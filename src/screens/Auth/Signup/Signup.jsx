@@ -21,7 +21,7 @@ const Signup = () => {
       <ScrollView>
         <View style={styles.subContainer}>
           <View style={styles.signinTextContainer}>
-            <Text style={styles.signinText}>Signup</Text>
+            <Text style={styles.signinText}>Sign up</Text>
             <Text style={styles.signinText2}>
               let's get you set up in few minute
             </Text>
